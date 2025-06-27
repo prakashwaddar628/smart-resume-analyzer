@@ -31,20 +31,20 @@ smart_resume_analyzer/
 git clone https://github.com/<your-username>/smart_resume_analyzer.git
 cd smart_resume_analyzer
 
-### 2. Create and activate a virtual environment:
+2. Create and activate a virtual environment:
 ```bash
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 
-### 3. Install dependencies:
+3. Install dependencies:
 ```bash
 pip install -r requirements.txt
 
-### 4. Run the Streamlit app:
+4. Run the Streamlit app:
 ```bash
 streamlit run app.py
 
-##✅ Next Phases
+✅ Next Phases
 Phase	Description
 Phase 2	Parse job descriptions & extract skill requirements
 Phase 3	Match resume vs JD using NLP models
@@ -53,6 +53,6 @@ Phase 5	Recommend skills, certifications, and courses
 Phase 6	Add analytics dashboard & job scraper integration
 
 
-# 📌 Author
+📌 Author
 Prakash L Waddar
 AI Software Developer & Data Science Enthusiast
