@@ -14,13 +14,12 @@ A Streamlit-based application that lets users upload their resume (`.pdf` or `.d
 ---
 
 ## 📂 Project Structure
-
-smart_resume_analyzer/
-├── app.py # Streamlit frontend
-├── resume_parser.py # Resume parsing logic (PDF/DOCX)
-├── uploads/ # Folder to store uploaded files
-├── requirements.txt # Python dependencies
-└── README.md # Project documentation
+    smart_resume_analyzer/
+    ├── app.py # Streamlit frontend
+    ├── resume_parser.py # Resume parsing logic (PDF/DOCX)
+    ├── uploads/ # Folder to store uploaded files
+    ├── requirements.txt # Python dependencies
+    └── README.md # Project documentation
 
 ---
 
