@@ -11,12 +11,20 @@ A Streamlit-based application that lets users upload their resume (`.pdf` or `.d
 - View the extracted resume content in the UI
 - Save the text for future AI-based processing
 
+## 🚀 Phase 2: JD Parsing & Skill Extraction
+
+- Added input support for job descriptions (manual or file upload)
+- Implemented `jd_parser.py` using spaCy for keyword/skill extraction
+- Displayed extracted skills from JD in the UI
+- Prepared backend for upcoming resume-vs-JD matching (Phase 3)
+
 ---
 
 ## 📂 Project Structure
     smart_resume_analyzer/
     ├── app.py # Streamlit frontend
     ├── resume_parser.py # Resume parsing logic (PDF/DOCX)
+    ├── jd_parser.py 
     ├── uploads/ # Folder to store uploaded files
     ├── requirements.txt # Python dependencies
     └── README.md # Project documentation

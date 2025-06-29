@@ -1,54 +1,159 @@
-SUMMARY
-PROJECTS
-EDUCATION
-SKILLS
-CERTIFICATIONS
-Karwar, Karnataka 581307
-prakashwaddar28@gmail.com
-+91 9740637206
-PRAKASH L WADDAR
-Student
-Enthusiastic and dedicated engineering student with a keen interest in the transformative power of artificial
- intelligence and data science. Passionate about innovation, problem-solving, and driving positive chang
-e through technology, I am eager to further explore the realm of software.
-Developed Machine Learning Project used to detect network
- intrusion in system using different model’s and differen
-t algorithms
-B.TECH ARTIFICIAL INTELLIGENCE AND DATA
- SCIENCE
-2023 – 2026
-DIPLOMA COMPUTER SCIENCE AND 
- ENGINEERING
-2017 – 2021
-Ability to work independently and as part
- of a team
-Detail-oriented and able to handle
- multiple tasks simultaneously
-Good in Microsoft Excel, Word, Canva
-Programming languages: C, Python, R
- MySQL, HTML ,CSS, React and Node JS
-Data Analysis (Excel & Python)
-Mongoose DB and PHP Database 
-Coursera Fundamental Cyber Security
- Certificate
-Network Intrusion Detection System
-LANGUAGES
-NMAM INSTITUTE OF TECHNOLOGY
-GOVT. POLYTECHNIC KARWAR
-PG Management System
-Developed a Responsive and Accessible Web Interface for
- showing top rated PG’s available
-Library Management System
-Building Library Management System in DataBase Management
- System using MySQL
-AUTOMN MENSWEAR
-Developed e-commerce Website using React for Mens Clothing 
-English
-Hindi
-Telugu
-Kannada
-Konkani
-INTEREST
-Reading Books
-Listing Music
-Outdoor games (Volleyball, Batminton, Football) 
+ 
+PRAKASH L WADDAR 
+Data Science Undergraduate | Full Stack Developer | AI Enthusiast 
+Phone No: +91 9740637206 Email: prakashwaddar628@gmail.com 
+LinkedIn: https://www.linkedin.com/in/prakash-l-waddar/ GitHub: https://github.com/prakashwaddar628 
+ 
+SUMMARY 
+ 
+Data Science and AI undergraduate with a strong foundation in machine learning, deep 
+learning, and full-stack web development. Experienced in building intelligent systems 
+and dynamic web apps that integrate AI-driven features. Proficient in Python, 
+TensorFlow, and modern web stacks like Next.js and Flask. Passionate about solving 
+real-world problems using data-driven solutions and automation. Actively working on 
+impactful projects combining AI, analytics, and scalable software systems. 
+ 
+EDUCATION 
+ 
+B.Tech  NMAM Institute of Technology  
+ 
+ 
+CGPA: 7.06/10 
+08/2023 - 06/2026 
+ 
+Diploma Govt. Polytechnic Karwar 
+ 
+ 
+ 
+Percentage: 56% 
+07/2017 - 05/2021 
+KEY ACHIEVEMENTS 
+ 
+❖ 
+Team Efficiency Boost 
+Recognized for significant contributions leading to 
+30% increase in team efficiency. 
+ 
+❖ 
+Deployment Excellence 
+Successfully led deployment reducing app 
+downtime by 20 hours monthly. 
+ 
+❖ 
+AI Algorithm Success 
+Achieved 95% accuracy in anime character 
+classification using AI algorithms. 
+ 
+❖ 
+Query Efficiency Improvement 
+Improved database query efficiency by 50% in PG 
+Management System project. 
+ 
+EXPERIENCE 
+WebNexa 
+AI-Powered Website Generator 
+• Reduced manual web development time by 70% using automated content and 
+layout generation. 
+• Integrated Ollama models for cost-effective deployment and improved scalability 
+across devices. 
+ 
+GroceryHub 
+Inventory Dashboard System 
+• Implemented CRUD operations with RESTful APIs and role-based access control. 
+• Improved inventory tracking efficiency by 40% through visualized stock metrics. 
+• Used component-based architecture for responsive UI and modular updates. 
+ 
+Anime Characterization 
+Final Year Project 
+• Utilized deep learning (CNNs) with OpenCV for character detection. 
+• Built training pipeline for image classification using TensorFlow with custom 
+datasets. 
+• Targeting behavioral analysis based on visual sentiment and expressions. 
+ 
+Network Intrusion Detection System 
+Developed a machine learning model to detect real-time cyber threats and anomalies in 
+network traffic. 
+• Achieved 91% detection accuracy using supervised ML algorithms on benchmark 
+datasets. 
+SKILLS 
+ 
+C/C++ 
+CSS 
+Deep Learning 
+Flask 
+Git 
+GitHub 
+HTML 
+Java 
+JavaScript  
+Jenkins 
+ Jupyter Notebook 
+ 
+MongoDB 
+Microsoft Power BI 
+ ML Algorithms           Next.js 
+Numpy 
+OpenCV 
+  Pandas  
+   PHP  
+Postman 
+  Python 
+   ReactJS 
+  REST 
+ 
+Scikit-Learn  
+SQL 
+Tailwind 
+TensorFlow 
+Node.js 
+Express.js 
+ 
+ 
+ 
+INTERESTS 
+ 
+❖ 
+Interests 
+Interests in Full Stack Development, AI Automation, 
+Data Science,Machine Learning, Competitive 
+Programming, Open Source Contribution, and Tech for 
+Good. 
+• Built interactive dashboards for live predictions using Jupyter Notebook. 
+• Focused on anomaly-based detection using Python’s ML stack. 
+PG Management System 
+Management System 
+• Integrated user authentication, profile management, and booking system. 
+• Designed responsive UI with modular components and PHP backend. 
+• Managed data persistence with MySQL relational schema. 
+ 
+CERTIFICATIONS 
+ 
+Smart India Hackathon 2024 
+Internal Ideathon Participant in Smart India Hackathon 2024 
+Data Analytics Career Skills 
+Course focused on data analytics skills 
+Jenkins: Getting Started with CI/CD 
+Introduction to Continuous Integration and Continuous Deployment 
+Foundations of Cybersecurity 
+Completed an online course authorized by Google via Coursera 
+Getting Started with Full Stack Java Development 
+Introductory course on backend and full stack Java development 
+Creating Responsive Web Pages using Bootstrap 4 
+Course on building responsive frontend designs using Bootstrap
+EXPERIENCE 
+ 
+Research Intern 
+NMAM Institute Of Technology 
+12/2024 - Present 
+Nitte, India 
+Conducted research on detecting fake product reviews 
+using machine learning and natural language processing 
+techniques. 
+• Implemented text classification models using TF-IDF, 
+Logistic Regression, and SVM. 
+• Achieved accuracy of 87% in identifying deceptive 
+reviews on benchmark datasets. 
+• Explored sentiment analysis and word vectorization 
+techniques for model improvement. 
+• Contributed to data preprocessing and evaluation 
+pipelines during the project’s experimental phase. 
