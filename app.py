@@ -1,7 +1,7 @@
 import streamlit as st
 import os
 from resume_parser import extract_text_from_pdf, extract_text_from_docx
-from jd_parser import extract_skills_from_jd
+from jd_parser import extract_skills_from_jd, filter_tech_skills
 
 # Page config
 st.set_page_config(page_title="Smart Resume Analyzer")
@@ -69,5 +69,6 @@ if job_description_text:
     st.text_area("JD Text", job_description_text, height=300)
 
     skills = extract_skills_from_jd(job_description_text)
-    st.markdown("### 🧠 Extracted Key Skills & Keywords from JD:")
-    st.write(skills)
+    tech_skills = filter_tech_skills(skills)
+    st.markdown("### 🧠 Extracted Key Technical Skills from JD:")
+    st.write(tech_skills)
