@@ -31,11 +31,12 @@ KNOWN_TECH_SKILLS = [
 ]
 
 def filter_tech_skills(keywords):
+    print("Incoming keywords: ", keywords)
     filtered = []
     for kw in keywords:
         for tech in KNOWN_TECH_SKILLS:
-            # Match exact tech word or close phrase (e.g., "python skills")
-            if tech in kw:
+            if tech in kw.lower():
                 filtered.append(tech)
                 break
+    print("Filtered skills: ", filtered)
     return sorted(set(filtered))
