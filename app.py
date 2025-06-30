@@ -81,7 +81,7 @@ if job_description_text:
     st.write(tech_skills)
 
 # -------------------------------
-# 📥 Extract Resume Skills After Resume Is Uploaded
+# 📥 Extract Resume Skills
 # -------------------------------
 if resume_txt:
     resume_skills = extract_skills_from_jd(resume_txt)
@@ -94,17 +94,6 @@ if resume_txt:
 # 📊 Resume vs JD Skill Matching
 # -------------------------------
 if resume_tech_skills and tech_skills:
-# debug lines
-    st.markdown("### 🧪 Debug Info:")
-    st.write("📝 Resume Text:", resume_txt)
-    st.write("🔍 Resume Keywords:", extract_skills_from_jd(resume_txt))
-    st.write("✅ Resume Tech Skills:", resume_tech_skills)
-
-    st.write("📝 JD Text:", job_description_text)
-    st.write("🔍 JD Keywords:", extract_skills_from_jd(job_description_text))
-    st.write("✅ JD Tech Skills:", tech_skills)
-    # ends here
-
     st.markdown("---")
     st.header("📊 Resume vs JD Skill Matching")
 
