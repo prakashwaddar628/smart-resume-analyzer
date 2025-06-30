@@ -18,6 +18,13 @@ A Streamlit-based application that lets users upload their resume (`.pdf` or `.d
 - Displayed extracted skills from JD in the UI
 - Prepared backend for upcoming resume-vs-JD matching (Phase 3)
 
+## 📊 Phase 3 Complete: Resume vs JD Skill Matching
+
+- Extracted tech skills from resume using existing parsers
+- Compared resume and JD skills with match percentage
+- Displayed matching/missing skills and score visually
+- Added validation and cleaned UX flow
+
 ---
 
 ## 📂 Project Structure

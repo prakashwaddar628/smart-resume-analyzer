@@ -2,6 +2,7 @@ import streamlit as st
 import os
 from resume_parser import extract_text_from_pdf, extract_text_from_docx
 from jd_parser import extract_skills_from_jd, filter_tech_skills
+from matcher import match_skills
 
 # Page config
 st.set_page_config(page_title="Smart Resume Analyzer")
@@ -15,6 +16,9 @@ if not os.path.exists("uploads"):
 # -------------------------------
 # 📄 Resume Upload & Extraction
 # -------------------------------
+resume_txt = ""
+resume_tech_skills = []
+
 upload_file = st.file_uploader("📄 Upload Resume (.docx or .pdf)", type=["pdf", "docx"])
 
 if upload_file:
@@ -64,11 +68,51 @@ elif jd_input_method == "Upload File":
 # -------------------------------
 # 🧠 JD Parsing and Skill Extraction
 # -------------------------------
+tech_skills = []
+
 if job_description_text:
     st.markdown("### ✨ Extracted Job Description:")
     st.text_area("JD Text", job_description_text, height=300)
 
-    skills = extract_skills_from_jd(job_description_text)
-    tech_skills = filter_tech_skills(skills)
+    jd_skills = extract_skills_from_jd(job_description_text)
+    tech_skills = filter_tech_skills(jd_skills)
+
     st.markdown("### 🧠 Extracted Key Technical Skills from JD:")
     st.write(tech_skills)
+
+# -------------------------------
+# 📥 Extract Resume Skills After Resume Is Uploaded
+# -------------------------------
+if resume_txt:
+    resume_skills = extract_skills_from_jd(resume_txt)
+    resume_tech_skills = filter_tech_skills(resume_skills)
+
+    st.markdown("### 📌 Extracted Key Technical Skills from Resume:")
+    st.write(resume_tech_skills)
+
+# -------------------------------
+# 📊 Resume vs JD Skill Matching
+# -------------------------------
+if resume_tech_skills and tech_skills:
+    st.markdown("---")
+    st.header("📊 Resume vs JD Skill Matching")
+
+    result = match_skills(resume_tech_skills, tech_skills)
+
+    st.markdown(f"✅ **Match Score:** `{result['match_score']}%`")
+    st.progress(int(result['match_score']))
+
+    st.markdown("🟢 **Matching Skills:**")
+    st.write(result['matched_skills'])
+
+    st.markdown("🔴 **Missing Skills (JD but not in Resume):**")
+    st.write(result['missing_skills'])
+
+elif job_description_text and not resume_txt:
+    st.warning("⚠️ Please upload your resume to start matching.")
+
+elif resume_txt and not job_description_text:
+    st.warning("⚠️ Please provide a job description to match with your resume.")
+
+elif resume_txt and job_description_text and (not resume_tech_skills or not tech_skills):
+    st.warning("⚠️ Could not extract skills properly from resume or JD. Please check the content.")
