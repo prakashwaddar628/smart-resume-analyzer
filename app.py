@@ -116,9 +116,13 @@ if resume_tech_skills and tech_skills:
 
     course_links = get_course_links(result['missing_skills'])
     if course_links:
-        st.markdown("🎓 **Recommended Learning Resources:**")
-        for skill, url in course_links.items():
-            st.markdown(f"- [{skill.title()}]({url})")
+        st.markdown("🎓 **Recommended Learning Resources (Free & Paid):**")
+        for skill, links in course_links.items():
+            st.markdown(f"- **{skill.title()}**")
+            if "free" in links:
+                st.markdown(f"    - 🆓 [Free Course]({links['free']})")
+            if "paid" in links:
+                st.markdown(f"    - 💰 [Paid Course]({links['paid']})")
 
 elif job_description_text and not resume_txt:
     st.warning("⚠️ Please upload your resume to start matching.")
