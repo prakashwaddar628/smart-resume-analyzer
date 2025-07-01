@@ -1,72 +1,149 @@
-# 🧠 Smart Resume Analyzer - Phase 1
+# 🧠 Smart Resume Analyzer
 
-A Streamlit-based application that lets users upload their resume (`.pdf` or `.docx`) and extracts the raw text using NLP libraries. This is **Phase 1** of a full AI + Data Science project aimed at **smart resume-job matching and personalized career recommendations**.
-
----
-
-## 🚀 Features (Phase 1)
-
-- Upload resume in PDF or Word format
-- Automatically extract clean text from resume
-- View the extracted resume content in the UI
-- Save the text for future AI-based processing
-
-## 🚀 Phase 2: JD Parsing & Skill Extraction
-
-- Added input support for job descriptions (manual or file upload)
-- Implemented `jd_parser.py` using spaCy for keyword/skill extraction
-- Displayed extracted skills from JD in the UI
-- Prepared backend for upcoming resume-vs-JD matching (Phase 3)
-
-## 📊 Phase 3 Complete: Resume vs JD Skill Matching
-
-- Extracted tech skills from resume using existing parsers
-- Compared resume and JD skills with match percentage
-- Displayed matching/missing skills and score visually
-- Added validation and cleaned UX flow
+An AI-powered career tool to intelligently analyze your resume, compare it with job descriptions, and recommend personalized upskilling resources. Built with **Streamlit**, **spaCy**, and custom NLP matching logic.
 
 ---
 
-## 📂 Project Structure
-    smart_resume_analyzer/
-    ├── app.py # Streamlit frontend
-    ├── resume_parser.py # Resume parsing logic (PDF/DOCX)
-    ├── jd_parser.py 
-    ├── uploads/ # Folder to store uploaded files
-    ├── requirements.txt # Python dependencies
-    └── README.md # Project documentation
+## 📌 Project Overview
+
+The Smart Resume Analyzer helps students and professionals improve their resumes for targeted job roles by:
+- Extracting skill-related content from resumes
+- Comparing it against any job description (JD)
+- Highlighting skill gaps
+- Recommending both free and paid resources to fill those gaps
 
 ---
 
-## ⚙️ How to Run
+## 🛠️ Tech Stack
 
-### 1. Clone the repo:
+| Layer | Tools |
+|-------|-------|
+| UI | Streamlit |
+| NLP | spaCy |
+| Backend | Python |
+| Skill Matching | Custom logic |
+| Learning Links | Kaggle, Coursera, YouTube, Udemy, etc. |
+
+---
+
+## 🚀 Features by Phase
+
+### ✅ Phase 1: Resume Text Extraction
+- Upload `.pdf` or `.docx` resumes
+- Extract and display clean text using `pdfminer` and `docx2txt`
+
+### ✅ Phase 2: JD Skill Extraction
+- Input JD via text box or upload
+- Extract key skills using spaCy’s noun phrase extraction
+- Filter for technical keywords
+
+### ✅ Phase 3: Resume vs JD Skill Matching
+- Compare extracted resume skills with JD skills
+- Display:
+  - Matching skills ✅
+  - Missing skills ❌
+  - Match percentage 📊
+
+### ✅ Phase 4: GPT-like Feedback + Learning Suggestions
+- Recommend courses for **missing skills**
+- Include both **free** (Kaggle, YouTube, FreeCodeCamp) and **paid** (Coursera, Udemy, Microsoft Learn) resources
+- Structured output with clickable learning paths
+
+---
+
+## 🎓 Sample Output
+
+🧾 Job Description: Data Analyst Role at Flipkart
+
+✅ Match Score: 68%
+
+🟢 Matching Skills:
+
+Python
+
+SQL
+
+Excel
+
+🔴 Missing Skills:
+
+Tableau
+
+Power BI
+
+Machine Learning
+
+🎓 Recommended Courses:
+
+Tableau:
+
+Free: https://www.youtube.com/playlist?list=PLUaB...
+
+Paid: https://www.tableau.com/learn/training/20221
+
+Power BI:
+
+Free: https://www.youtube.com/watch?v=AGrl-H87pRU
+
+Paid: https://learn.microsoft.com/en-us/training/...
+
+Machine Learning:
+
+Free: https://www.kaggle.com/learn/intro-to-machine-learning
+
+Paid: https://www.coursera.org/learn/machine-learning
+
+yaml
+Copy
+Edit
+
+---
+
+## 🗂️ Folder Structure
+
+smart_resume_analyzer/
+│
+├── app.py # Main Streamlit frontend
+├── resume_parser.py # PDF/DOCX text extraction
+├── jd_parser.py # JD skill extraction & filtering
+├── matcher.py # Resume-JD skill matching logic
+├── recommender.py # Skill → Course recommendations
+├── uploads/ # Uploaded resumes & JD files
+├── requirements.txt # Project dependencies
+└── README.md # You are here
+
+yaml
+Copy
+Edit
+
+---
+
+## ⚙️ Setup Instructions
+
 ```bash
+# 1. Clone the repo
 git clone https://github.com/<your-username>/smart_resume_analyzer.git
 cd smart_resume_analyzer
 
-2. Create and activate a virtual environment:
-```bash
+# 2. Create and activate virtual environment
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 
-3. Install dependencies:
-```bash
+# 3. Install dependencies
 pip install -r requirements.txt
 
-4. Run the Streamlit app:
-```bash
+# 4. Run the Streamlit app
 streamlit run app.py
+🧩 Coming Soon
+Phase	Features
+Phase 5	📊 Career Analytics Dashboard
+Phase 6	📤 PDF Export of Skill Gaps & Courses
+Phase 7	🧠 LLM/GPT-based Job-Fit Explanation
+Phase 8	🔎 Auto Web Scraping of Latest JD from Job Boards
 
-✅ Next Phases
-Phase	Description
-Phase 2	Parse job descriptions & extract skill requirements
-Phase 3	Match resume vs JD using NLP models
-Phase 4	Generate feedback using GPT/LLM
-Phase 5	Recommend skills, certifications, and courses
-Phase 6	Add analytics dashboard & job scraper integration
-
-
-📌 Author
+👨‍💻 Author
 Prakash L Waddar
-AI Software Developer & Data Science Enthusiast
+AI Software Developer & Data Science Student
+
+⭐ Give a Star
+If you find this helpful, star the repo to show support! 🌟
