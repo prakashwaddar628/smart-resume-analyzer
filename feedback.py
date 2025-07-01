@@ -5,5 +5,5 @@ def generate_feedback(missing_skills):
     feedback = "Here are some suggestions to improve your resume based on missing skills:\n\n"
 
     for skill in missing_skills:
-        feedback += "f• Learn or highlight your experience with **{skill.title()}**.\n"
+        feedback += f"• Learn or highlight your experience with '**{skill.title()}**'.\n"
     return feedback
