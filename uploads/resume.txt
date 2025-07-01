@@ -1,102 +1,109 @@
 PRAKASH L WADDAR
-Data Science Undergraduate | Full Stack Developer | AI Enthusiast
-Phone No: +91 9740637206 Email:prakashwaddar628@gmail.com
-LinkedIn: https://www.linkedin.com/in/prakash-l-waddar/ GitHub: https://github.com/prakashwaddar628
-
-
-SUMMARY	
-Data Science and AI undergraduate with a strong foundation in machine learning, deep learning, and full-stack web development. Experienced in building intelligent systems and dynamic web apps that integrate AI-driven features. Proficient in Python, TensorFlow, and modern web stacks like Next.js and Flask. Passionate about solving real-world problems using data-driven solutions and automation. Actively working on impactful projects combining AI, analytics, and scalable software systems.
-
-EDUCATION	
-B.Tech  NMAM Institute of Technology				CGPA: 7.06/10
-08/2023 - 06/2026
-
-Diploma Govt. Polytechnic Karwar				Percentage: 56%
-07/2017 - 05/2021
-KEY ACHIEVEMENTS	
-Team Efficiency Boost
-Recognized for significant contributions leading to
-30% increase in team efficiency.
-
-Deployment Excellence
-Successfully led deployment reducing app
-downtime by 20 hours monthly.
-
-AI Algorithm Success
-Achieved 95% accuracy in anime character
-classification using AI algorithms.
-
-Query Efficiency Improvement
-Improved database query efficiency by 50% in PG
-Management System project.
-
-
+Karwar, Karnataka, India
+prakashwaddar628@gmail.com
++919740637206
+in/prakash-l-waddar
+github.com/prakashwaddar628/
+SUMMARY
+Data Science and AI undergraduate with a strong foundation in machine learning, deep learning, and full-stack web development. Experienced in
+building intelligent systems and dynamic web apps that integrate AI-driven features. Proficient in Python, TensorFlow, and modern web stacks like
+Next.js and Flask. Passionate about solving real-world problems using data-driven solutions and automation. Actively working on impactful projects
+combining AI, analytics, and scalable software systems.
 EXPERIENCE
-WebNexa
-AI-Powered Website Generator
-Reduced manual web development time by 70% using automated content and layout generation.
-Integrated Ollama models for cost-effective deployment and improved scalability across devices.
-
-GroceryHub
-Inventory Dashboard System
-Implemented CRUD operations with RESTful APIs and role-based access control.
-Improved inventory tracking efficiency by 40% through visualized stock metrics.
-Used component-based architecture for responsive UI and modular updates.
-
-Anime Characterization
-Final Year Project
-Utilized deep learning (CNNs) with OpenCV for character detection.
-Built training pipeline for image classification using TensorFlow with custom datasets.
-Targeting behavioral analysis based on visual sentiment and expressions.
-
-Network Intrusion Detection System
-Developed a machine learning model to detect real-time cyber threats and anomalies in network traffic.
-Achieved 91% detection accuracy using supervised ML algorithms on benchmark datasets.
-SKILLS
-
-C/C++	CSS	Deep Learning	Flask	Git
-GitHub	HTML	Java	JavaScript 
-Jenkins		Jupyter Notebook		MongoDB Microsoft Power BI		ML Algorithms		          Next.js Numpy	OpenCV			Pandas		   PHP 
-Postman			Python				ReactJS			REST
-
-Scikit-Learn		SQL	Tailwind	TensorFlow Node.js	Express.js
- 
-
-INTERESTS
-
-Interests
-Interests in Full Stack Development, AI Automation,
-Data Science,Machine Learning, Competitive Programming, Open Source Contribution, and Tech for Good.
-
-Built interactive dashboards for live predictions using Jupyter Notebook.
-Focused on anomaly-based detection using Python’s ML stack.
-PG Management System
-Management System
-Integrated user authentication, profile management, and booking system.
-Designed responsive UI with modular components and PHP backend.
-Managed data persistence with MySQL relational schema.
-
-CERTIFICATIONS
-
-Smart India Hackathon 2024
-Internal Ideathon Participant in Smart India Hackathon 2024
-Data Analytics Career Skills
-Course focused on data analytics skills
-Jenkins: Getting Started with CI/CD
-Introduction to Continuous Integration and Continuous Deployment
-Foundations of Cybersecurity
-Completed an online course authorized by Google via Coursera
-Getting Started with Full Stack Java Development
-Introductory course on backend and full stack Java development
-Creating Responsive Web Pages using Bootstrap 4
-Course on building responsive frontend designs using BootstrapEXPERIENCE
-
 Research Intern
 NMAM Institute Of Technology
-12/2024 - Present	Nitte, India
+12/2024 - Present Nitte, India
+,
 Conducted research on detecting fake product reviews using machine learning and natural language processing techniques.
+•
 Implemented text classification models using TF-IDF, Logistic Regression, and SVM.
+•
 Achieved accuracy of 87% in identifying deceptive reviews on benchmark datasets.
-Explored sentiment analysis and word vectorization
-techniques for model improvement.
-Contributed to data preprocessing and evaluation pipelines during the project’s experimental phase.
+•
+Explored sentiment analysis and word vectorization techniques for model improvement.
+•
+Contributed to data preprocessing and evaluation pipelines during the project's experimental phase.
+•
+PROJECT
+Anime Characterizer – AI-Powered Image Recognition System
+github.com/prakashwaddar628/anime-characterizer.git
+Technologies: DeepDanbooru, YOLOv8, CLIP, Jikan API, Streamlit, TensorFlow
+•
+Recognizes anime characters using hybrid ML model combining object detection and image embeddings.
+•
+Used YOLOv8 for multi-character detection, CLIP for fallback recognition, and Jikan API for real-time bio fetching.
+•
+Showcases full ML pipeline integration + API usage + user interface delivery.
+•
+Engineered an advanced image recognition platform that identifies anime characters through a seamless integration of deep learning models,
+real-time data retrieval APIs, and an interactive user interface.
+•
+Smart Resume Analyzer
+github.com/prakashwaddar628/smart-resume-analyzer.git
+Technologies: Python, Streamlit, NLP, Regular Expressions, PDF/DOCX Parsing
+•
+Implemented parsing logic using python-docx and PyMuPDF to extract text from resumes and job descriptions.
+•
+Built interactive Streamlit interface with upload modules, visual skill match indicators, and smart recommendations.
+•
+Supports both DOCX and PDF formats for real-time analysis.
+•
+Network Intrusion Detection System
+github.com/prakashwaddar628/Network-intrusion-detection-system.git
+Developed a machine learning model to detect real-time cyber threats and anomalies in network traffic.
+•
+Achieved 91% detection accuracy using supervised ML algorithms on benchmark datasets.
+•
+Built interactive dashboards for live predictions using Jupyter Notebook.
+•
+Focused on anomaly-based detection using Python's ML stack.
+•
+PG Management System
+github.com/prakashwaddar628/PG-life.git
+Integrated user authentication, profile management, and booking system.
+•
+Designed responsive UI with modular components and PHP backend.
+•
+Managed data persistence with MySQL relational schema.
+•
+EDUCATION
+B.Tech in Artificial Intelligence and Data Science
+NMAM Institute of Technology • Nitte Udupi Karnataka • 08/2023-06/2026 • 7.06/10
+Diploma in Computer Science and Engineering
+Govt. Polytechnic Karwar • Karwar Karnataka • 07/2017-05/2021 • 56
+CERTIFICATIONS
+Responsive Web Design using Bootstrap 4
+Bootstrap • 2025
+Focused on mobile-first web design, grid system, and UI components.
+•
+Google Cloud – Prompt Design in Vertex AI
+Google Cloud Skill Boost • 2025
+Hands-on with large language models, prompt engineering, and multimodal AI in Vertex AI.
+•
+Showcases industry-ready generative AI skills.
+•
+Full Stack Java Development
+Simplilearn/LinkedIn Learning • 2024
+Introductory course on backend and full stack Java development.
+•
+Covers backend + frontend dev using Spring Boot, React, SQL.
+•
+Foundations of Cybersecurity
+Google (Coursera) • 2024
+Core security principles and practical awareness of attack vectors.
+•
+Data Analytics Career Skills
+Google (Coursera) • 2024
+Excel, data wrangling, visual storytelling, and predictive analytics.
+•
+Jenkins – CI/CD Pipeline Deployment
+Google (Coursera) • 2024
+Demonstrates DevOps fundamentals with CI/CD automation using Jenkins.
+•
+SKILLS
+Languages: Python, JavaScript, Java, C/C++, PHP, SQL
+Frontend: HTML, CSS, Tailwind, Bootstrap
+Backend & Frameworks: Flask, Node.js, Express.js, ReactJS, Next.js
+ML & AI: TensorFlow, Scikit-Learn, OpenCV, DeepDanbooru, CLIP, Numpy, Pandas
+Tools: Git, GitHub, Postman, Jenkins, MongoDB, MySQL, Power BI, Jupyter, REST APIs
+Cloud/DevOps: Vertex AI, Streamlit, Ollama, CI/CD

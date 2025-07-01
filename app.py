@@ -3,6 +3,7 @@ import os
 from resume_parser import extract_text_from_pdf, extract_text_from_docx
 from jd_parser import extract_skills_from_jd, filter_tech_skills
 from matcher import match_skills
+from feedback import generate_feedback
 
 # Page config
 st.set_page_config(page_title="Smart Resume Analyzer")
@@ -107,6 +108,10 @@ if resume_tech_skills and tech_skills:
 
     st.markdown("🔴 **Missing Skills (JD but not in Resume):**")
     st.write(result['missing_skills'])
+
+    st.markdown("🧠 **AI Feedback & Recommendations:**")
+    feedback = generate_feedback(['missing_skills'])
+    st.markdown(feedback)
 
 elif job_description_text and not resume_txt:
     st.warning("⚠️ Please upload your resume to start matching.")
