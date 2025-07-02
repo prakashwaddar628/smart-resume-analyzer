@@ -1,27 +1,12 @@
-# Streamlit UI
-streamlit==1.35.0
-
-# NLP & Skill Extraction
-spacy==3.7.4
-en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.0/en_core_web_sm-3.7.0.tar.gz
-
-# PDF and DOCX parsing
+streamlit
+spacy
+plotly
+pdfplumber
+python-docx
+fitz
 pdfminer.six==20221105
-pdfplumber==0.10.3       # Only needed if you're using pdfplumber, otherwise can be removed
 python-docx==1.1.0
-PyMuPDF==1.24.5           # fitz is part of this package
-
-# Data Processing
 pandas==2.2.2
 numpy==1.26.4
-
-# Plotting / Dashboard
-plotly==5.22.0
-
-# PDF Generation (for Phase 6)
 fpdf==1.7.2
-# Optional (for HTML to PDF, requires wkhtmltopdf)
-# pdfkit==1.0.0
-
-# HTTP Requests
 requests==2.32.3
