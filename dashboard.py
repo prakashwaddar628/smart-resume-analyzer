@@ -32,7 +32,7 @@ def render_dashboard(match_result):
         go.Bar(x=skill_data["Category"], y=skill_data["Count"], marker_color=["green","red"])
     ])
 
-    fig2.update_loayout(title="Skill Coverage", xaxis_title="Skill Category", yaxis_title="Count")
+    fig2.update_layout(title="Skill Coverage", xaxis_title="Skill Category", yaxis_title="Count")
     st.plotly_chart(fig2, use_container_width=True)
 
     st.markdown("Matched Skills")
