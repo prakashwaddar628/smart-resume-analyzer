@@ -58,63 +58,76 @@ The Smart Resume Analyzer helps students and professionals improve their resumes
 ✅ Match Score: 68%
 
 🟢 Matching Skills:
-
-Python
-
-SQL
-
-Excel
+  -Python
+  -SQL
+  -Excel
 
 🔴 Missing Skills:
-
-Tableau
-
-Power BI
-
-Machine Learning
+  -Tableau
+  -Power BI
+  -Machine Learning
 
 🎓 Recommended Courses:
 
-Tableau:
-
-Free: https://www.youtube.com/playlist?list=PLUaB...
-
-Paid: https://www.tableau.com/learn/training/20221
-
-Power BI:
-
+-Tableau:
+  Free: https://www.youtube.com/playlist?list=PLUaB...
+  Paid: https://www.tableau.com/learn/training/20221
+-Power BI:
 Free: https://www.youtube.com/watch?v=AGrl-H87pRU
-
 Paid: https://learn.microsoft.com/en-us/training/...
-
-Machine Learning:
-
+-Machine Learning:
 Free: https://www.kaggle.com/learn/intro-to-machine-learning
-
 Paid: https://www.coursera.org/learn/machine-learning
 
-yaml
-Copy
-Edit
+### 🧠 Phase 5: GPT Feedback, Skill Recommendations & Analytics Dashboard
+In this phase, we enhanced the resume analyzer by adding AI-generated feedback, personalized course suggestions, and a data-driven analytics dashboard using Plotly.
+
+🚀 Features Added
+✅ 1. AI-Powered Resume Feedback
+Uses GPT-based models to analyze missing skills.
+
+Generates smart, actionable feedback for candidates to improve their resume.
+
+🎓 2. Skill-Based Course Recommendations
+For every missing skill, shows:
+
+🆓 Free resource (YouTube, Kaggle, FreeCodeCamp)
+
+💰 Paid course (Coursera, Udemy, etc.)
+
+Helps users bridge the skill gap between their resume and job requirements.
+
+📊 3. Analytics Dashboard
+Built with Plotly for professional, interactive visuals.
+
+Match Score Gauge: See your overall job readiness.
+
+Bar Chart: Visual breakdown of matched vs. missing skills.
+
+Color-coded alerts for instant clarity.
+
+💎 4. Clean UI Enhancements
+Better layout using Streamlit columns and progress indicators.
+
+Skill results displayed using success, info, and error banners.
 
 ---
 
 ## 🗂️ Folder Structure
 
-smart_resume_analyzer/
-│
-├── app.py # Main Streamlit frontend
-├── resume_parser.py # PDF/DOCX text extraction
-├── jd_parser.py # JD skill extraction & filtering
-├── matcher.py # Resume-JD skill matching logic
-├── recommender.py # Skill → Course recommendations
-├── uploads/ # Uploaded resumes & JD files
-├── requirements.txt # Project dependencies
-└── README.md # You are here
-
-yaml
-Copy
-Edit
+    smart_resume_analyzer/
+    │
+    ├── uploads/ # Uploaded resumes & JD files
+    ├── app.py # Main Streamlit frontend
+    ├── dashboard.py
+    ├── feedback.py
+    ├── jd_parser.py # JD skill extraction & filtering
+    ├── matcher.py # Resume-JD skill matching logic
+    ├── recommender.py # Skill → Course recommendations
+    ├── requirements.txt # Project dependencies
+    ├── resume_parser.py # PDF/DOCX text extraction
+    ├── README.MD
+    └── test_js.txt #testing exmple
 
 ---
 
