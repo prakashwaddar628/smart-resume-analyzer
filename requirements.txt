@@ -3,9 +3,7 @@ spacy
 plotly
 pdfplumber
 python-docx
-fitz
 pdfminer.six==20221105
-python-docx==1.1.0
 pandas==2.2.2
 numpy==1.26.4
 fpdf==1.7.2
