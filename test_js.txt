@@ -1,0 +1,14 @@
+We are looking for a Data Analyst Intern who is passionate about data and eager to gain hands-on experience. The candidate should be comfortable working with structured datasets and generating insights to support decision-making.
+
+**Responsibilities:**
+- Analyze large datasets to identify trends and patterns
+- Build dashboards and visualizations using tools like Tableau or Power BI
+- Assist in preparing reports and presentations
+- Collaborate with cross-functional teams on data projects
+
+**Requirements:**
+- Strong knowledge of Python and SQL
+- Familiarity with data visualization tools (Power BI, Tableau, or Matplotlib)
+- Understanding of statistics and basic machine learning concepts
+- Good communication and analytical thinking skills
+- Currently pursuing a degree in Data Science, Computer Science, or related field
