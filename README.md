@@ -115,19 +115,19 @@ Skill results displayed using success, info, and error banners.
 
 ## 🗂️ Folder Structure
 
-    smart_resume_analyzer/
-    │
-    ├── uploads/ # Uploaded resumes & JD files
-    ├── app.py # Main Streamlit frontend
-    ├── dashboard.py
-    ├── feedback.py
-    ├── jd_parser.py # JD skill extraction & filtering
-    ├── matcher.py # Resume-JD skill matching logic
-    ├── recommender.py # Skill → Course recommendations
-    ├── requirements.txt # Project dependencies
-    ├── resume_parser.py # PDF/DOCX text extraction
-    ├── README.MD
-    └── test_js.txt #testing exmple
+  smart_resume_analyzer/
+  │
+  ├── uploads/ # Uploaded resumes & JD files
+  ├── app.py # Main Streamlit frontend
+  ├── dashboard.py
+  ├── feedback.py
+  ├── jd_parser.py # JD skill extraction & filtering
+  ├── matcher.py # Resume-JD skill matching logic
+  ├── recommender.py # Skill → Course recommendations
+  ├── requirements.txt # Project dependencies
+  ├── resume_parser.py # PDF/DOCX text extraction
+  ├── README.MD
+  └── test_js.txt #testing exmple
 
 ---
 
