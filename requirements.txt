@@ -1,5 +1,5 @@
 streamlit
-PyMuPDF
-python-docx
 spacy
 plotly
+python-docx
+pdfplumber

@@ -1,120 +1,100 @@
 # 🧠 Smart Resume Analyzer
 
-An AI-powered career tool to intelligently analyze your resume, compare it with job descriptions, and recommend personalized upskilling resources. Built with **Streamlit**, **spaCy**, and custom NLP matching logic.
+An AI-powered tool that analyzes your resume against job descriptions and provides personalized feedback, missing skills, and upskilling course recommendations. Built using **Streamlit**, **spaCy**, **Plotly**, and custom NLP logic.
 
 ---
 
 ## 📌 Project Overview
 
-The Smart Resume Analyzer helps students and professionals improve their resumes for targeted job roles by:
+The **Smart Resume Analyzer** helps students and professionals boost their job readiness by:
+
 - Extracting skill-related content from resumes
-- Comparing it against any job description (JD)
+- Comparing it with a job description (JD)
 - Highlighting skill gaps
-- Recommending both free and paid resources to fill those gaps
+- Recommending curated **free & paid courses** to fill the gaps
+- Providing AI-powered resume feedback and dashboards
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Layer | Tools |
-|-------|-------|
-| UI | Streamlit |
-| NLP | spaCy |
-| Backend | Python |
-| Skill Matching | Custom logic |
-| Learning Links | Kaggle, Coursera, YouTube, Udemy, etc. |
+| Layer        | Technology                         |
+|--------------|-------------------------------------|
+| UI           | Streamlit                           |
+| NLP Engine   | spaCy                               |
+| Text Parsing | pdfminer.six, python-docx           |
+| Matching     | Custom logic (set-based comparison) |
+| Dashboard    | Plotly                              |
+| Upskilling   | Kaggle, YouTube, Coursera, Udemy    |
 
 ---
 
-## 🚀 Features by Phase
+## 🚀 Feature Progression (Phases)
 
-### ✅ Phase 1: Resume Text Extraction
-- Upload `.pdf` or `.docx` resumes
-- Extract and display clean text using `pdfminer` and `docx2txt`
+### ✅ Phase 1: Resume Upload & Text Extraction
+- Upload resume in `.pdf` or `.docx`
+- Extracts and displays text cleanly using `pdfminer` and `docx2txt`
 
-### ✅ Phase 2: JD Skill Extraction
-- Input JD via text box or upload
-- Extract key skills using spaCy’s noun phrase extraction
-- Filter for technical keywords
+### ✅ Phase 2: JD Upload/Input & Skill Extraction
+- JD input via text box or upload
+- Extracts technical skills using spaCy noun phrases
+- Filters only known technical keywords
 
 ### ✅ Phase 3: Resume vs JD Skill Matching
-- Compare extracted resume skills with JD skills
-- Display:
-  - Matching skills ✅
-  - Missing skills ❌
-  - Match percentage 📊
+- Compares extracted skills
+- Calculates **match score**
+- Highlights:
+  - ✅ Matching Skills
+  - ❌ Missing Skills
 
-### ✅ Phase 4: GPT-like Feedback + Learning Suggestions
-- Recommend courses for **missing skills**
-- Include both **free** (Kaggle, YouTube, FreeCodeCamp) and **paid** (Coursera, Udemy, Microsoft Learn) resources
-- Structured output with clickable learning paths
+### ✅ Phase 4: GPT Feedback + Skill Recommendations
+- **Smart Feedback** for missing skills using GPT-like logic
+- **Free & Paid Courses** shown for each missing skill
+  - Platforms: Kaggle, Coursera, YouTube, Udemy, FreeCodeCamp
 
----
-
-## 🎓 Sample Output
-
-🧾 Job Description: Data Analyst Role at Flipkart
-
-Match Score: 68%
-- 🟢 Matching Skills:
-  - Python
-  - SQL
-  - Excel
-
-- 🔴 Missing Skills:
-  - Tableau
-  - Power BI
-  - Machine Learning
-
-🎓 Recommended Courses:
-
-- Tableau:
-  - Free: https://www.youtube.com/playlist?list=PLUaB...
-  - Paid: https://www.tableau.com/learn/training/20221
-- Power BI:
-  - Free: https://www.youtube.com/watch?v=AGrl-H87pRU
-  - Paid: https://learn.microsoft.com/en-us/training/...
-- Machine Learning:
-  - Free: https://www.kaggle.com/learn/intro-to-machine-learning
-  - Paid: https://www.coursera.org/learn/machine-learning
-
-### 🧠 Phase 5: GPT Feedback, Skill Recommendations & Analytics Dashboard
-In this phase, we enhanced the resume analyzer by adding AI-generated feedback, personalized course suggestions, and a data-driven analytics dashboard using Plotly.
-
-- Features Added
-  - AI-Powered Resume Feedback
-    - Uses GPT-based models to analyze missing skills.
-    - Generates smart, actionable feedback for candidates to improve their resume.
-  - Skill-Based Course Recommendations
-    - For every missing skill, shows:
-      - Free resource (YouTube, Kaggle, FreeCodeCamp)
-      - Paid course (Coursera, Udemy, etc.)
-    - Helps users bridge the skill gap between their resume and job requirements.
-  - Analytics Dashboard
-    - Built with Plotly for professional, interactive visuals.
-    - Match Score Gauge: See your overall job readiness.
-    - Bar Chart: Visual breakdown of matched vs. missing skills.
-    - Color-coded alerts for instant clarity.
-  - Clean UI Enhancements
-    - Better layout using Streamlit columns and progress indicators.
-    - Skill results displayed using success, info, and error banners.
+### ✅ Phase 5: Analytics Dashboard
+- **Match Score Gauge** (Plotly)
+- **Skill Bar Chart**: Matched vs Missing
+- Professional UI using Streamlit columns, themes & layout
+- Copyright
 
 ---
 
-## 🗂️ Folder Structure
+## 📊 Sample Output
 
+**Job Description:** Data Analyst @ Flipkart  
+**Match Score:** `68%`
+
+- ✅ Matching Skills:
+  - Python, SQL, Excel
+- ❌ Missing Skills:
+  - Tableau, Power BI, Machine Learning
+
+**🎓 Recommended Courses:**
+
+- **Tableau**
+  - 🆓 [Free Course](https://www.youtube.com/playlist?list=PLUaB-1hjhk8H48Pj32z4GZgGWyylqv85f)
+  - 💰 [Paid Course](https://www.tableau.com/learn/training/20221)
+
+- **Machine Learning**
+  - 🆓 [Free Course](https://www.kaggle.com/learn/intro-to-machine-learning)
+  - 💰 [Paid Course](https://www.coursera.org/learn/machine-learning)
+
+---
+
+## 📁 Folder Structure
     smart_resume_analyzer/
     │
     ├── uploads/ # Uploaded resumes & JD files
     ├── app.py # Main Streamlit frontend
-    ├── dashboard.py
-    ├── feedback.py
+    ├── dashboard.py # Analytics Dashboard with Plotly
+    ├── feedback.py # GPT-like skill feedback generator
     ├── jd_parser.py # JD skill extraction & filtering
     ├── matcher.py # Resume-JD skill matching logic
     ├── recommender.py # Skill → Course recommendations
     ├── requirements.txt # Project dependencies
     ├── resume_parser.py # PDF/DOCX text extraction
-    ├── README.MD
+    ├── README.MD # You're reading this :)
     └── test_js.txt #testing exmple
 
 ---
@@ -137,14 +117,14 @@ pip install -r requirements.txt
 streamlit run app.py
 🧩 Coming Soon
 Phase	Features
-Phase 5	📊 Career Analytics Dashboard
-Phase 6	📤 PDF Export of Skill Gaps & Courses
-Phase 7	🧠 LLM/GPT-based Job-Fit Explanation
-Phase 8	🔎 Auto Web Scraping of Latest JD from Job Boards
+Phase 6	📤 PDF Export of Skill Gaps
+Phase 7	🧠 LLM-based Job Fit Justification (GPT)
+Phase 8	🔎 Auto Job Scraper (LinkedIn, Naukri, etc.)
 
 👨‍💻 Author
 Prakash L Waddar
 AI Software Developer & Data Science Student
 
-⭐ Give a Star
-If you find this helpful, star the repo to show support! 🌟
+⭐ Support
+If you found this project helpful, consider giving it a ⭐ on GitHub!
+Together, let’s make resumes smarter. 🚀
