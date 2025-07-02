@@ -2,6 +2,8 @@
 
 An AI-powered tool that analyzes your resume against job descriptions and provides personalized feedback, missing skills, and upskilling course recommendations. Built using **Streamlit**, **spaCy**, **Plotly**, and custom NLP logic.
 
+## **Deploy-Link:https://smart-resume-analyzer-1.streamlit.app/**
+
 ---
 
 ## 📌 Project Overview
