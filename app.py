@@ -5,6 +5,8 @@ from jd_parser import extract_skills_from_jd, filter_tech_skills
 from matcher import match_skills
 from feedback import generate_feedback
 from recommender import get_course_links
+from dashboard import render_dashboard
+
 
 # Page config
 st.set_page_config(page_title="Smart Resume Analyzer")
@@ -123,6 +125,8 @@ if resume_tech_skills and tech_skills:
                 st.markdown(f"    - 🆓 [Free Course]({links['free']})")
             if "paid" in links:
                 st.markdown(f"    - 💰 [Paid Course]({links['paid']})")
+
+    render_dashboard(result)
 
 elif job_description_text and not resume_txt:
     st.warning("⚠️ Please upload your resume to start matching.")

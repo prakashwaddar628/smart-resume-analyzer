@@ -2,3 +2,4 @@ streamlit
 PyMuPDF
 python-docx
 spacy
+plotly
