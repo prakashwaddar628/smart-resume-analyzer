@@ -1,8 +1,18 @@
 import spacy
 import re
+import subprocess
+import sys
+
+# ✅ Auto-download if model not found
+def load_spacy_model():
+    try:
+        return spacy.load("en_core_web_sm")
+    except OSError:
+        subprocess.run([sys.executable, "-m", "spacy", "download", "en_core_web_sm"])
+        return spacy.load("en_core_web_sm")
 
 # Load spaCy English model
-nlp = spacy.load("en_core_web_sm")
+nlp = load_spacy_model()
 
 # Known tech skills to match against
 KNOWN_TECH_SKILLS = [
@@ -19,7 +29,6 @@ def extract_skills_from_jd(text):
     doc = nlp(text)
     raw_keywords = set()
 
-    # Add noun chunks (phrases like "data analysis")
     for chunk in doc.noun_chunks:
         phrase = chunk.text.strip().lower()
         if (
@@ -30,12 +39,10 @@ def extract_skills_from_jd(text):
         ):
             raw_keywords.add(phrase)
 
-    # Add noun and proper nouns from tokens (e.g., 'python', 'sql')
     for token in doc:
         if token.pos_ in ["NOUN", "PROPN"] and not token.is_stop and not token.is_punct:
             raw_keywords.add(token.text.strip().lower())
 
-    # Optional: Extract after keywords like "Skills:", "Technologies:"
     pattern_skills = re.findall(r"skills[:\-]*([\s\S]+?)(?:experience|projects|education|$)", text.lower())
     for match in pattern_skills:
         lines = re.split(r"[\n,•\-]", match)
@@ -46,17 +53,14 @@ def extract_skills_from_jd(text):
 
     return sorted(raw_keywords)
 
-
 # 2. Match extracted keywords to known tech skills
 def filter_tech_skills(keywords):
-    print("Incoming keywords:", keywords)
     filtered = []
 
     for kw in keywords:
         for tech in KNOWN_TECH_SKILLS:
-            if tech in kw:  # using lowercase already
+            if tech in kw:
                 filtered.append(tech)
                 break
 
-    print("Filtered skills:", filtered)
     return sorted(set(filtered))
